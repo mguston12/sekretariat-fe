@@ -82,7 +82,7 @@ const CreateContract = () => {
     if (listCustomer.length !== 0 && listBank.length !== 0 && listPaymentMethod.length !== 0) {
       const transformedList = listCustomer.map((obj) => ({
         value: obj,
-        label: obj.nama_customer,
+        label: `${obj.nama_customer} - ${obj.alamat_customer}`,
       }))
       setListCustomerTransformed(transformedList)
 
