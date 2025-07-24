@@ -229,21 +229,21 @@ const Sekretariat = () => {
             <CTable striped bordered hover responsive>
               <CTableHead>
                 <CTableRow>
-                  <CTableHeaderCell className="text-center">ID Customer</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Nama Customer</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center" width="20%">
+                  <CTableHeaderCell className="text-center align-middle">ID Customer</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Nama Customer</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle" width="20%">
                     Alamat
                   </CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">PIC</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Penandatangan</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Jabatan</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Contact</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Action</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">PIC</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Penandatangan</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Jabatan</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Contact</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Action</CTableHeaderCell>
                 </CTableRow>
               </CTableHead>
               <CTableBody>
                 {listCustomer.map((item, index) => (
-                  <CTableRow key={index} className="text-center">
+                  <CTableRow key={index} className="text-center align-middle">
                     <CTableDataCell>{item.id_customer}</CTableDataCell>
                     <CTableDataCell>{item.nama_customer}</CTableDataCell>
                     <CTableDataCell>{item.alamat_customer}</CTableDataCell>

@@ -167,15 +167,15 @@ const Sekretariat = () => {
             <CTable striped bordered hover responsive>
               <CTableHead>
                 <CTableRow>
-                  <CTableHeaderCell className="text-center">No. Kontrak</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Customer</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Tanggal Buat</CTableHeaderCell>
-                  <CTableHeaderCell className="text-center">Action</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">No. Kontrak</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Customer</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Tanggal Buat</CTableHeaderCell>
+                  <CTableHeaderCell className="text-center align-middle">Action</CTableHeaderCell>
                 </CTableRow>
               </CTableHead>
               <CTableBody>
                 {listContract.map((item, index) => (
-                  <CTableRow key={index} className="text-center">
+                  <CTableRow key={index} className="text-center align-middle">
                     <CTableDataCell>{item.no_kontrak}</CTableDataCell>
                     <CTableDataCell>{item.nama_customer}</CTableDataCell>
                     <CTableDataCell>{item.tanggal_buat}</CTableDataCell>

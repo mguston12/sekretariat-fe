@@ -510,18 +510,18 @@ const EditContract = () => {
               <CTable striped bordered hover responsive>
                 <CTableHead>
                   <CTableRow>
-                    <CTableHeaderCell className="text-center">Qty</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Tipe Mesin</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Speed</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Harga Sewa</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Free Copy</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Over Copy</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Free Copy Color</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Over Copy Color</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Periode Awal</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Periode Akhir</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Penempatan</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center" width="10%">
+                    <CTableHeaderCell className="text-center align-middle">Qty</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Tipe Mesin</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Speed</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Harga Sewa</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Free Copy</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Over Copy</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Free Copy Color</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Over Copy Color</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Periode Awal</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Periode Akhir</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle">Penempatan</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center align-middle" width="10%">
                       Action
                     </CTableHeaderCell>
                   </CTableRow>
@@ -529,7 +529,7 @@ const EditContract = () => {
                 <CTableBody>
                   {listMesin &&
                     listMesin.map((item, index) => (
-                      <CTableRow key={index} className="text-center">
+                      <CTableRow key={index} className="text-center align-middle">
                         <CTableDataCell>{item.quantity}</CTableDataCell>
                         <CTableDataCell>{item.tipe_mesin}</CTableDataCell>
                         <CTableDataCell>{item.speed}</CTableDataCell>
