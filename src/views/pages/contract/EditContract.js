@@ -151,7 +151,7 @@ const EditContract = () => {
 
       const transformedList2 = listBank.map((obj) => ({
         value: obj,
-        label: obj.bank_name,
+        label: `${obj.bank_name} - ${obj.nomor_rekening}`,
       }))
       setListBankTransformed(transformedList2)
 
@@ -194,7 +194,7 @@ const EditContract = () => {
 
   const GetListBanks = () => {
     setIsLoading(true)
-    const url = `http://192.168.88.250:8080/banks`
+    const url = `http://192.168.88.250:8080/banks?company=${selectedCompany.value}`
 
     axios
       .get(url)
